@@ -20,10 +20,15 @@ second netmask, you can design sub- and supernetworks. It is also
 intended to be a teaching tool and presents the results as
 easy-to-understand binary values.
 
+%description -l pl
+ipcalc pobiera adres IP oraz maskê sieci i oblicza wynikaj±cy z nich
+adres sieci, broadcastu, maskê wildcard dla Cisco i zakres hostów.
+Podaj±c drug± maskê, mo¿esz projektowaæ pod- i nadsieci. Program ten
+ma byæ tak¿e narzêdziem do nauki i prezentuje wyniki w ³atwej do
+zrozumienia binarnej postaci.
+
 %prep
 
-%build
-	
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
