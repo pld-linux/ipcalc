@@ -1,12 +1,14 @@
+%include /usr/lib/rpm/macros.perl
 Summary:	Address format change and calculation utility
 Summary(pl):	Narzêdzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
 Version:	0.35
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://jodies.de/ipcalc-archive/%{name}-%{version}.tar.gz
 URL:		http://jodies.de/ipcalc/
+BuildRequires:	rpm-perlprov
 Requires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,11 +27,12 @@ ma byæ tak¿e narzêdziem do nauki i prezentuje wyniki w ³atwej do
 zrozumienia binarnej postaci.
 
 %prep
+%setup -q
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}/ipv4calc
+install %{name} $RPM_BUILD_ROOT%{_bindir}/ipv4calc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
