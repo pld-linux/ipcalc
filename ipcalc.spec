@@ -3,7 +3,7 @@ Summary:	Address format change and calculation utility
 Summary(pl):	Narzêdzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
 Version:	0.35
-Release:	2
+Release:	3
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://jodies.de/ipcalc-archive/%{name}-%{version}.tar.gz
