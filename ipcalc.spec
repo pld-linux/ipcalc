@@ -5,7 +5,7 @@ Version:	0.35
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	http://jodies.de/%{name}.pl
+Source0:	http://jodies.de/ipcalc-archive/%{name}-%{version}.tar.gz
 URL:		http://jodies.de/ipcalc/
 Requires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
