@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://jodies.de/ipcalc-archive/%{name}-%{version}.tar.gz
+# Source0-md5:	ff215ea7cd2207ecd5787146fba98566
 URL:		http://jodies.de/ipcalc/
 BuildRequires:	rpm-perlprov
 Requires:	perl
