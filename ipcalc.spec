@@ -11,6 +11,7 @@ Group(pl):	Sieciowe/Narzêdzia
 Group(pt_BR):	Rede/Utilitários
 Source0:	http://jodies.de/%{name}.pl
 URL:		http://jodies.de/ipcalc/
+Requires:	perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
