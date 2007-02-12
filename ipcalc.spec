@@ -1,6 +1,6 @@
 %include /usr/lib/rpm/macros.perl
 Summary:	Address format change and calculation utility
-Summary(pl):	Narzêdzie do zmiany formatu i przeliczania adresów
+Summary(pl.UTF-8):   NarzÄ™dzie do zmiany formatu i przeliczania adresÃ³w
 Name:		ipcalc
 Version:	0.41
 Release:	1
@@ -19,11 +19,11 @@ second netmask, you can design sub- and supernetworks. It is also
 intended to be a teaching tool and presents the results as
 easy-to-understand binary values.
 
-%description -l pl
-ipcalc pobiera adres IP oraz maskê sieci i oblicza wynikaj±cy z nich
-adres sieci, broadcastu, maskê wildcard dla Cisco i zakres hostów.
-Podaj±c drug± maskê, mo¿esz projektowaæ pod- i nadsieci. Program ten
-ma byæ tak¿e narzêdziem do nauki i prezentuje wyniki w ³atwej do
+%description -l pl.UTF-8
+ipcalc pobiera adres IP oraz maskÄ™ sieci i oblicza wynikajÄ…cy z nich
+adres sieci, broadcastu, maskÄ™ wildcard dla Cisco i zakres hostÃ³w.
+PodajÄ…c drugÄ… maskÄ™, moÅ¼esz projektowaÄ‡ pod- i nadsieci. Program ten
+ma byÄ‡ takÅ¼e narzÄ™dziem do nauki i prezentuje wyniki w Å‚atwej do
 zrozumienia binarnej postaci.
 
 %prep
