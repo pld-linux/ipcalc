@@ -1,4 +1,3 @@
-%include /usr/lib/rpm/macros.perl
 Summary:	Address format change and calculation utility
 Summary(pl.UTF-8):	Narzędzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
