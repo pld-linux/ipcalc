@@ -2,7 +2,7 @@ Summary:	Address format change and calculation utility
 Summary(pl.UTF-8):	Narzędzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
 Version:	1.0.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Networking/Utilities
 Source0:	https://gitlab.com/ipcalc/ipcalc/-/archive/%{version}/%{name}-%{version}.tar.bz2
@@ -38,7 +38,11 @@ zrozumienia binarnej postaci.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT/bin
+
 %ninja_install -C build
+
+%{__mv} $RPM_BUILD_ROOT{%{_bindir},/bin}/ipcalc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README.md NEWS
-%attr(755,root,root) %{_bindir}/ipcalc
+%attr(755,root,root) /bin/ipcalc
 %{_mandir}/man1/ipcalc.1*
