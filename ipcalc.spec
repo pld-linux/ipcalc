@@ -1,15 +1,17 @@
 Summary:	Address format change and calculation utility
 Summary(pl.UTF-8):	Narzędzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
-Version:	1.0.1
-Release:	2
+Version:	1.0.3
+Release:	1
 License:	GPL v2+
 Group:		Networking/Utilities
+#Source0Download: https://gitlab.com/ipcalc/ipcalc/-/tags
 Source0:	https://gitlab.com/ipcalc/ipcalc/-/archive/%{version}/%{name}-%{version}.tar.bz2
-# Source0-md5:	d4ea985eff73bcaa49e85a81b12f544c
+# Source0-md5:	fa2544da2635894158196da401e3eb8c
 URL:		https://gitlab.com/ipcalc/ipcalc
 BuildRequires:	libmaxminddb-devel
 BuildRequires:	meson >= 0.49
+BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	ronn
 BuildRequires:	rpmbuild(macros) >= 1.726
@@ -34,6 +36,7 @@ zrozumienia binarnej postaci.
 
 %build
 %meson build
+
 %ninja_build -C build
 
 %install
