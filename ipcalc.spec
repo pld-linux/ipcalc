@@ -14,7 +14,7 @@ BuildRequires:	meson >= 0.49
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
 BuildRequires:	ronn
-BuildRequires:	rpmbuild(macros) >= 1.726
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
