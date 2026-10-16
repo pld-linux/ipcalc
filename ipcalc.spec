@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	man	# man page (requires ronn)
+
 Summary:	Address format change and calculation utility
 Summary(pl.UTF-8):	Narzędzie do zmiany formatu i przeliczania adresów
 Name:		ipcalc
@@ -13,7 +17,7 @@ BuildRequires:	libmaxminddb-devel
 BuildRequires:	meson >= 0.49
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
-#BuildRequires:	ronn
+%{?with_man:BuildRequires:	ronn}
 BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -54,4 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md NEWS
 %attr(755,root,root) /bin/ipcalc
-#%{_mandir}/man1/ipcalc.1*
+%if %{with man}
+%{_mandir}/man1/ipcalc.1*
+%endif
